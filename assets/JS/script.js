@@ -1,9 +1,9 @@
 let thisBox;
 let newBorder;
-let allBoxes;
 
-allColors = ["red", "green", "blue", "yellow", "purple", "gold", "brown", "orange", "teal"];
-allBorders = ["dotted", "solid", "double", "groove", "inset", "outset", "ridge"]
+
+let allColors = ["red", "green", "blue", "yellow", "purple", "gold", "brown", "orange", "teal"];
+let allBorders = ["dotted", "solid", "double", "groove", "inset", "outset", "ridge"]
 
 function changeButton(id) {
     thisBox = document.getElementById(id);
@@ -30,7 +30,12 @@ function resetColors(id1, id2, id3) {
     let secondBox = document.getElementById(id2);
     let thirdBox = document.getElementById(id3);
 
-    firstBox.classList.add = "initial";
+    firstBox.style.removeProperty("background");
+    secondBox.style.removeProperty("background");
+    thirdBox.style.removeProperty("background");
+    firstBox.style.removeProperty("border");
+    secondBox.style.removeProperty("border");
+    thirdBox.style.removeProperty("border");
 
     
 }
