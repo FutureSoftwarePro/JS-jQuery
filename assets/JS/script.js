@@ -30,12 +30,7 @@ function resetColors(id1, id2, id3) {
     let secondBox = document.getElementById(id2);
     let thirdBox = document.getElementById(id3);
 
-    firstBox.style.background = "initial";
-    secondBox.style.background = "initial";
-    thirdBox.style.background = "initial";
-
-    firstBox.style.border= "initial";
-    secondBox.style.border = "initial";
-    thirdBox.style.border = "initial";
+    firstBox.classList.add = "initial";
+    
 
 }
