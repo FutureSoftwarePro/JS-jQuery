@@ -31,6 +31,6 @@ function resetColors(id1, id2, id3) {
     let thirdBox = document.getElementById(id3);
 
     firstBox.classList.add = "initial";
-    
 
+    
 }
